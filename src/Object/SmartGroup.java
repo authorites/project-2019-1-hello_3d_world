@@ -9,14 +9,14 @@ public class SmartGroup extends Group {
 		private Rotate r;
 		private Transform t = new Rotate();
 		
-		void rotateByX(int ang) {
+		public void rotateByX(int ang) {
 			r = new Rotate(ang, Rotate.X_AXIS);
 			t = r.createConcatenation(r);
 //			this.getTransforms().clear();
 			this.getTransforms().addAll(t);
 		}
 		
-		void rotateByY(int ang) {
+		public void rotateByY(int ang) {
 			r = new Rotate(ang, Rotate.Y_AXIS);
 			t = r.createConcatenation(r);
 //			this.getTransforms().clear();

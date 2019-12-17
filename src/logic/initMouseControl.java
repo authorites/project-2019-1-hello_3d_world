@@ -4,6 +4,7 @@ import Object.SmartGroup;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleDoubleProperty;
 import javafx.scene.Scene;
+import javafx.scene.SubScene;
 import javafx.scene.transform.Rotate;
 
 public class initMouseControl {
@@ -14,7 +15,7 @@ public class initMouseControl {
 	private final DoubleProperty angleX = new SimpleDoubleProperty(0);
 	private final DoubleProperty angleY = new SimpleDoubleProperty(0);
 	
-	initMouseControl(SmartGroup group, Scene scene) {
+	public initMouseControl(SmartGroup group, Scene scene) {
 		
 		Boolean check = true;
 		Rotate xRotate;
