@@ -78,7 +78,6 @@ public class Split extends SplitPane {
 				Controller3d.rotation(box, 360), Controller3d.rotationAxis(box, 1), 
 				Controller3d.scale(box, 30, 0));
 		
-		group.rotateByX(20);
 		group.rotateByY(30);
 		
 		accordion.getColorPickerObject().setOnAction(event -> {
