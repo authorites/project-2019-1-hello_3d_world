@@ -64,11 +64,6 @@ public class Xform extends Group {
         t.setY(y);
     }
 
-    // Cannot override these methods as they are final:
-    // public void setTranslateX(double x) { t.setX(x); }
-    // public void setTranslateY(double y) { t.setY(y); }
-    // public void setTranslateZ(double z) { t.setZ(z); }
-    // Use these methods instead:
     public void setTx(double x) { t.setX(x); }
     public void setTy(double y) { t.setY(y); }
     public void setTz(double z) { t.setZ(z); }
@@ -98,11 +93,6 @@ public class Xform extends Group {
         s.setZ(z);
     }
 
-    // Cannot override these methods as they are final:
-    // public void setScaleX(double x) { s.setX(x); }
-    // public void setScaleY(double y) { s.setY(y); }
-    // public void setScaleZ(double z) { s.setZ(z); }
-    // Use these methods instead:
     public void setSx(double x) { s.setX(x); }
     public void setSy(double y) { s.setY(y); }
     public void setSz(double z) { s.setZ(z); }
